@@ -1,0 +1,32 @@
+
+body{
+	margin: 0px;
+}
+
+.fondo {
+	height: 1400px;
+    display: flex;
+	background: linear-gradient(to top, #240d0d,#111111 );
+}
+
+.fondo img {
+	margin: 20px;
+    max-width: 400px;
+    height: 670px;
+}
+
+.info {
+
+    padding: 20px;
+}
+
+#nombre{
+	text-align: center;
+    font-size: 45px;
+    color: #e39a9a;
+}
+
+#desc{
+    font-size: 25px;
+    color: #ffe5d8;
+}

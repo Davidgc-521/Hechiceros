@@ -1,0 +1,107 @@
+
+body{                   /*ESTE CSS ES PARA TODO LO QUE SE QUEDARA IGUAL EN LAS OTRAS PAGINAS (MENU, FOOTER, ETC)*/
+	margin: 0;
+	font-family: 'Candara', sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	overflow: hidden;
+	background: linear-gradient(to top, #221522,#000000 );
+}
+li{
+	font-size: 18px;
+	float: left;
+	width: 10%;
+	color: #ffffff;
+	text-align: center;
+}
+li a {
+	border-radius: 10px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+	z-index: 1;
+}
+
+button {
+	border: none;
+	color: #ffffff;
+	padding: 12px 20px;
+	cursor: pointer;
+	border-radius: 7px;
+	background-color: #d400ff; 
+	transition: transform 0.3s ease-in-out; /* Velocidad para achicarse */
+  }
+
+  button:hover {
+	background-color: #3f0852; 
+  }
+
+  button:active {      /*achica el boton al pulsar */
+	transform: scale(0.9);
+  }
+
+  
+/* PARA HACER ANIMACION EN EL MENU ARRIBA */
+li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+	border-radius: 20px;
+    background: #ffffff;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.9s ease-out;
+    z-index: -1;     /*pa mostrar el texto */
+}
+
+li a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+	border-radius: 10px;
+
+	
+}
+
+li a:hover {
+    color: #261527;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+
+footer {
+	background-color: #0d0a0e;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+
+#redes{
+	width: 30px;
+	height: 30px;
+}
+
+.redes {
+	display: inline-block; /* PA QUE VAYAN EN LINEA RECTA HACIA AL LADO */
+	margin: 0 10px;
+}
+.redes img {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s ease-in-out; 
+}
+.redes img:hover {
+	transform: scale(1.2);
+}
